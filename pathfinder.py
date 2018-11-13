@@ -16,11 +16,8 @@ with open("elevation_small.txt") as text_file:
 class ElevationMap:
     def ___init___(self, data_file = None):
         if data_file is None:
-            self.data = [ [4750, 4740, 4701, 4696],
-                        [  4714, 4708, 4698, 4691],
-                        [  4719, 4709, 4706, 4702],
-                        [  4720, 4726, 4708, 4701]]
-        self.data = []
+
+            self.data = []
         with open(data_file) as new_file:
             for row in new_file: 
                 lines = row.split()
